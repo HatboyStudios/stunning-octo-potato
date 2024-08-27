@@ -5,6 +5,10 @@
 ```
 
 ```
+    npm install react react-dom
+```
+
+```
     cd app-name
 ```
 

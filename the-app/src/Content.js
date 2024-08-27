@@ -1,23 +1,27 @@
 import { useState } from 'react';
 
+import Home from './Home.js';
+import Settings from './Settings.js';
+import Account from './Account.js';
+
 export default function Content({screen}) {
     
     if(screen === 1) {
         return(
             <div>
-                <h2>Screen 1</h2>
+                <Home />
             </div>
         )
     }else if(screen === 2) {
         return(
             <div>
-                <h2>Screen 2</h2>
+                <Settings />
             </div>
         )
     }else if(screen === 3) {
         return(
             <div>
-                <h2>Screen 3</h2>
+                <Account />
             </div>
         )
     }else {
