@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Home from './HomeSc.js';
 import Thread from './ThreadSc.js';
 import Settings from './SettingSc.js';
+import CustomButton from './bntCreation.js';
 import './App.css';
 
 
@@ -24,14 +25,14 @@ function App() {
   };
 
 
-
   return (
-    <div>
-      <nav>
-      <button type="button" onClick={() => setPage('home')}>Home</button>
-      <button type="button" onClick={() => setPage('thread')}>Thread</button>
-      <button type="button" onClick={() => setPage('settings')}>Settings</button>
-      </nav>
+      <div>
+        <nav>
+        <CustomButton onClick={() => setPage('home')} label="Home" />
+        <CustomButton onClick={() => setPage('thread')} label="Thread" />
+        <CustomButton onClick={() => setPage('settings')} label="Settings" />
+        </nav>
+
       <div>{switchPage()}</div>
     </div>
   );
