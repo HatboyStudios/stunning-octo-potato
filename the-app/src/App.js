@@ -28,9 +28,9 @@ function App() {
   return (
       <div>
         <nav>
-        <CustomButton onClick={() => setPage('home')} label="Home" />
-        <CustomButton onClick={() => setPage('thread')} label="Thread" />
-        <CustomButton onClick={() => setPage('settings')} label="Settings" />
+        <CustomButton onClick={() => setPage('home')} label="Home" id="NavHome"/>
+        <CustomButton onClick={() => setPage('thread')} label="Thread" id="NavThread" />
+        <CustomButton onClick={() => setPage('settings')} label="Settings" id="NavSettings" />
         </nav>
 
       <div>{switchPage()}</div>

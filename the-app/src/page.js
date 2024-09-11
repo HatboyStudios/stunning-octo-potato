@@ -1,3 +1,5 @@
+import CustomButton from "./bntCreation";
+
 export default function Page() {
 
     // var userdata = 0;
@@ -94,9 +96,11 @@ export default function Page() {
           <h2>Question:</h2>
           <h3>What is the MEANING of life?</h3>
           <input type="text" id="useranswer" placeholder="..." onClick={updateSession}></input>
-          <button type="button" onClick={handleButton1} class="userbutton">Change User</button>
-          <button type="button" onClick={handleButton2} class="subjectbutton">Change Subject</button>
-          <button type="button" onClick={handleButton} class="submit" >Submit Answer</button>
+
+
+          <CustomButton onClick={handleButton}  label="Submit " id="ThreadBut"/>
+          <CustomButton onClick={handleButton1} label="Change User" id="ThreadBut"/>
+          <CustomButton onClick={handleButton2} label="Change User" id="ThreadBut"/>
 
           
         </div>
