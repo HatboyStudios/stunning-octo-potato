@@ -78,12 +78,22 @@ export default function Page() {
     function handleButton2() {
       changeSubject(askquestion.tfqdata);
   }
+
+  let text = document.getElementById('useranswer');
+
+  if (sessionStorage.getItem('autosave')) {
+    text.value = sessionStorage.getItem('autosave');
+  }
+
+  function updateSession (text) {
+    console.log(text.value);
+  }
     return (
         <div>
           <h1>Welcome To The Website</h1>
           <h2>Question:</h2>
           <h3>What is the MEANING of life?</h3>
-          <input type="text" id="useranswer" placeholder="..."></input>
+          <input type="text" id="useranswer" placeholder="..." onClick={updateSession}></input>
           <button type="button" onClick={handleButton1} class="userbutton">Change User</button>
           <button type="button" onClick={handleButton2} class="subjectbutton">Change Subject</button>
           <button type="button" onClick={handleButton} class="submit" >Submit Answer</button>

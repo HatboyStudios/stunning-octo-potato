@@ -1,5 +1,11 @@
+//import CustomButton from "./bntCreation";
+
 const Home = () => {
-    return <h2>this is the home page</h2>;
+    /*return (
+        <div>
+          <CustomButton onClick={handleClick} label="Click Me" />
+        </div>
+      );*/
 }
 
 export default Home;
